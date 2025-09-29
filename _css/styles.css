@@ -149,7 +149,7 @@ blockquote {
 }
 /*For hero heading*/
 .hero-header {
-    background: url("/images/Hero-Header.png") no-repeat center center;
+    background: url("/COMP484Project1/images/Hero-Header.png") no-repeat center center;
     background-size: cover;
     height: 75vh; /*Viewport height*/
     display: flex;
