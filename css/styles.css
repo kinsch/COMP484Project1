@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: rgb(18, 80, 18);
 }
 body {
-	font-family: Verdana, Geneva, sans-serif, Arial, Helvetica;
+	font-family: sans-serif, Arial, Helvetica;
 	font-size: 100%;
 	width: 80%;
 	margin-right: auto;
@@ -213,6 +213,7 @@ details {
 What is it? Specifies a summary, caption, legend, etc. for the detail element's disclosure box.
 Clicking the summary element toggles the state of <details>.
 How it's used? I'm using it as a small disclosure as to what this website is for, why I chose this topic, etc.*/
+/*https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details*/
 summary {
 	font-weight: bold;
 	margin: -0.5em -0.5em 0; /*Pulls summary text up and out to sides, no bottom margin*/
@@ -231,6 +232,7 @@ details[open] summary {
 /*Element #2- Table. Includes a variety of attributes to go along with it.
 What is it? Represents tabular data with information presented in a 2d table.
 How it's used? I'm using it to show a breakdown of my top 3 favorite eats from this summer*/
+/*Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table */
 table {
 	border: 2px solid rgb(140 140 140); /*Adds a 2px solid grey border around the table*/
 	font-family: sans-serif;
@@ -257,4 +259,11 @@ td {
 tbody > tr:nth-of-type(even) { /*"Zebra striping for rows to color them in. Targets rows that are children of <tbody> and selects every even #'ed row*/
 	background-color: rgb(237 238 242);
 }
-
+/*Element #3- Time (and unique attribute- <datetime>
+/*How is <time> used? To represent a specific period in time.
+How is <datetime> used? To translate dates into machine-readable format for better search engine results or other custom features like reminders.
+How have I used this element and attribute? To represent the time and dates of my flights.*/
+/*Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time */
+time {
+	font-weight: bold;
+}
