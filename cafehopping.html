@@ -41,13 +41,13 @@
     <section>
         <h3>Top 3 Places</h3>
         <dl>
-            <dt>Butler Cafe - Brooklyn, NY</dt>
+            <dt><a href="https://www.butler-nyc.com/" target="_blank" title="Visit Butler Cafe website">Butler Cafe</a> - Brooklyn, NY</dt>
             <dd>Dubbed a <i>neighborhood favorite</i>, this cafe serves breakfast, dinner, and lunch. My friend and I ended up here around 6:00 AM after a 5 hour bus ride. Her and I think this place is <b>incredible</b>, or perhaps we were just starving.</dd>
 
-            <dt>Hui Lau Shan - Irvine, CA</dt>
+            <dt><a href="https://www.hkhls.com/en/" target="_blank" title="Visit Hui Lau Shan">Hui Lau Shan</a> - Irvine, CA</dt>
             <dd>Hui Lau Shan is a dessert shop focused on mango items! Everything is mango-related and its curated menu is very unique.</dd>
 
-            <dt>Gudetama Cafe - Buena Park, CA</dt>
+            <dt><a href="https://www.sanrio.com/collections/gudetama" target="_blank" title="Gudetama Cafe">Gudetama Cafe</a> - Buena Park, CA</dt>
             <dd>The Gudetema cafe is based on the popular sanrio character, <i>Gudetama</i>. For a character-cafe, the food was decent. The decor and attention to detail was the best part!</dd>
         </dl>
     </section>
@@ -55,10 +55,15 @@
         <h3>The breakdown...</h3>
         <p><img src="images/butlerInterior.png" alt="Butler Interior" width="300" height="420" class="flowRight"/></p>
         <!--Unique element: table-->
-        <table>
+        <!--Unique attribute: frame. What does it do? Determines which sides of the outer border of the table are visible. How is it used? I've used it to show all 4 sides with a border thickness of 1px-->
+        <table frame="box" border="1">
             <caption>A breakdown of my top 3 favorite eats from this summer. Number systems are based out of 10- <em>10 being the best!</em></caption>
+            <!--Start of table head. Identify the top level headings/ columns of the table.-->
             <thead>
-                <tr>
+                <!--tr: create a horizontal table row.-->
+                <!--Unique attribute- bgcolor. What is it for? Defines background color of the table. How is it used? I'm using it to color in the top row.-->
+                <tr bgcolor="lightgreen">
+                    <!--th- Table header cells. scope="col" declares that the heading applies to the entire column below.-->
                     <th scope="col">Restaurant</th>
                     <th scope="col">Food Rating</th>
                     <th scope="col">Drinks Rating</th>
@@ -66,9 +71,13 @@
                     <th scope="col">Overall Vibe</th>
                 </tr>
             </thead>
+            <!--tbody: table body. Groups the main data rows. -->
             <tbody>
+                <!--Creates new table row. I've created 1 row for each place to focus on-->
                 <tr>
+                    <!--Declares header applies to the entire row across.-->
                     <th scope="row">Butler Cafe</th>
+                    <!--Table data cells. Contains data and has different defaults than <th> (like not bold by default)-->
                     <td>8.5</td>
                     <td>8.0</td>
                     <td>8.5</td>
@@ -91,11 +100,12 @@
             </tbody>
         </table>
     </section>
-    <h3>Final Remarks on Butler Cafe</h3>
-    <p>Going to Butler in NYC was one of the most memorable meals! While the meal was from no michelin-star renowed place- the savory items, pastries, and drinks were solid. The cafe executed everything that they promised very well.</p>
-    <p>However, I will note that my friend and I were starving when we discovered this place. It was so early in the morning and so we searched "open cafes near me" and walked in the direction <i>maps</i> suggested. It is possible that this meal was not as phenomenal as it truly was, but rather a reflection of our hunger that morning.</p>
-    <p>Nevertheless, I absolutely adored this place! So much so, I wished for a second that I could pack up my life and move to NYC solely for this place. I'm already making plans to come back!</p>
-    </article>
+    <section>
+        <h3>Final Remarks on Butler Cafe</h3>
+        <p>Going to Butler in NYC was one of the most memorable meals! While the meal was from no michelin-star renowed place- the savory items, pastries, and drinks were solid. The cafe executed everything that they promised very well.</p>
+        <p>However, I will note that my friend and I were starving when we discovered this place. It was so early in the morning and so we searched "open cafes near me" and walked in the direction <i>maps</i> suggested. It is possible that this meal was not as phenomenal as it truly was, but rather a reflection of our hunger that morning.</p>
+        <p>Nevertheless, I absolutely adored this place! So much so, I wished for a second that I could pack up my life and move to NYC solely for this place. I'm already making plans to come back!</p>
+    </section>
 </article>
 </main>
 <footer role="contentinfo">
