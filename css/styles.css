@@ -151,7 +151,7 @@ blockquote {
 }
 /*For hero heading*/
 .hero-header {
-    background: url("../images/Hero-Header2.png") no-repeat center center; /*Gets image, has single instance of image, center horizontally + vertically*/
+    background: url("/images/Hero-Header2.png") no-repeat center center; /*Gets image, has single instance of image, center horizontally + vertically*/
     background-size: cover; /*Cover container*/
     height: 105vh; /*Viewport height*/
     display: flex; /*Flexbox to help center content*/
