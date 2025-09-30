@@ -11,44 +11,54 @@
     <!--Various Links to Rest of Pages-->
     <ul>
         <li><a href="index.html" title="Summary of Summer">Summary of Summer</a></li>
-        <li><a href="syntax.html" title="HTML syntax">CDPH</a></li>
-        <li><a href="structure.html" title="Structuring pages">Princess Cruises</a></li>
-        <li><a href="links.html" title="Creating links">Travel</a></li>
+        <li><a href="cafehopping.html" title="Cafe Hopping">Cafe Hopping</a></li>
+        <li><a href="princesscruises.html" title="Princess Cruises">Princess Cruises</a></li>
+        <li><a href="travel.html" title="Travel">Travel</a></li>
     </ul>
 </nav>
 
-<!--Hero Header-->
+<!--Hero Header as page header-->
 <!--I've chose to implement a hero header to make the website more visually appealing, it is styled with css-->
-<header class = "hero-header">
-    <div class = "hero-text">
-        <h1><b>Summer 2025</b></h1>
+<header class="hero-header" role="banner" >
+    <div class="hero-content">
+        <h1>Summer 2025</h1>
+        <h2>Overview</h2>
     </div>
 </header>
 
-<!--Page header-->
-<header role = "banner">
-    <h2>Summary of Summer</h2>
-</header>
-
 <!--Main Content-->
-<main role ="main">
+<main role="main">
+<article>
     <section>
-        <h3>Overview</h3>
-        <p>This Summer, I was able to complete my internships with the California Department of Public Health (CDPH), start & finish a new internship with Princess Cruises, and was fortunate enough to travel to different states across the East Coast with my friends.</p>
+        <h3>At a Glance</h3>
+        <p>This summer was a mix of lattes, laptops, and last-minute flights. I spent <em>more time than I should have</em> café hopping with friends, joined the software engineering team of a cruise line at Princess Cruises, and decided to book a flight across the country a week before school started.</p>
+        <p>It wasn't the most extravagant summer of all time, but my camera roll is full to the brim with more photos I thought my phone had storage for. I put this site together to serve as a little summer journal, and so I hope you enjoy flipping through (clicking through) some of my favorite places and happenings!</p>
     </section>
     <section>
-        <h3>CDPH</h3>
-        <p> <img src="images/cdphPolaroid.png" alt="CDPH" width="255" height="285" class="flowRight"/></p>
-        <p>While at CDPH, I worked for the Substance and Addiction Prevention Branch. More specifically, I joined their Data Analytics and Surveillance Unit, as well as the Office of Problem Gambling. During this time, I did a variety of data analysis projects pertaining to overdose research.</p>
+        <h4>Café Hopping</h4>
+        <p> <img src="../images/yellowHouse.png" alt="CDPH" width="200" height="220" class="flowRight"/></p>
+        <p>One of my favorite parts of summer is having the free time to go places at a time when I'd usually be in class. These past few months, I've tried a variety of new places- including new foods and drinks! Getting to go out to the places that appear on my brilliantly-curated social media reccomendations is one of the best parts of summer break.</p>
     </section>
     <section>
-        <h3>Princess Cruises</h3>
-        <p> </p>
+        <h4>Princess Cruises</h4>
+        <p><img src="../images/princessCruisesPolaroid.png" alt="PrincessCruises" width="200" height="220" class="flowRight"/></p>
+        <p>I had my first taste of corporate life this Summer. I joined a cruise company- Princess Cruises as a business analyst intern. I worked with cross-functional teams and our stakeholders to create software requirements. In addition to software specifications, I spent a lot of time learning about and working with our change management, QA, DevOps, and XOps teams.</p>
+        <p>Post this experience, I've returned to the company as a Jr. Business Analyst and do much of the same stuff I learned as an intern! So when I wasn't out with friends or trying new places, I was probably in my cutely decorated cubicle.</p>
     </section>
-  </article>
+    <section>
+        <h4> Travelling With Friends</h4>
+        <p><img src="../images/MITPolaroid.png" alt="PrincessCruises" width="200" height="220" class="flowRight"/></p>
+        <p>The week before school started, I headed to Boston to meet up with my friends! One of my closest friends moved there for the summer to complete her research and so I stayed with her for a bit! While I was there, I caught up with some other friends who'd moved there permanently. We visited so many states in such little time <em>(6 states in 5 days!)</em></p>
+    </section>
+</article>
 </main>
 <footer role="contentinfo">
-  <p><a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a> 18111 Nordhoff St Northridge, CA 91330</p>
+  <p>Maquenzie Garcia | COMP 484 | Project 1</p>
+  <details>
+    <!--Unique element: <summary>-->
+    <summary><b>About this Site</b></summary>
+    <p>This website was created as part of our COMP 484 Project 1 assignment. Over the summer, I ended up with a camera roll full of photos and thought a website would be a nice way to document things I did!</p>
+  </details>
 </footer>
 </body>
 </html>
